@@ -1,6 +1,9 @@
 require 'rubygems'
 require 'rake'
-require File.expand_path('../lib/crack', __FILE__)
+
+$:.insert(0, File.expand_path('../lib/', __FILE__))
+
+require 'crack'
 
 begin
   require 'jeweler'
